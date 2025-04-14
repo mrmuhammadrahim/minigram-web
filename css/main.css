@@ -18,23 +18,22 @@ ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	/* gap: 1rem; */
 	padding: 2rem;
 }
 
 .profileHeader {
-	width: 100%;
+	width: calc(100%/3);
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	gap: 1rem;
 	padding: 1rem;
-	border: 2pt solid black;
+	/* border: 2pt solid black; */
 }
 
 .profileHeader .cover {
 	display: flex;
-	gap: 1rem;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -119,18 +118,43 @@ ul {
 }
 
 .posts {
-	width: 100%;
+	width:calc(100%/3);
 }
 
 .posts .post-items {
 	width: 100%;
-	background: red;
+	/* background: red; */
 	display: flex;
 	gap: 1rem;
 	flex-wrap: wrap;
+	padding: 5px;
+	cursor: pointer;
+	
 }
 
 .posts .post-items li {
 	width: calc((100% - 2rem) / 3);
 	border: 2pt solid black;
+
+}
+.post-items li:hover {
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.post-items ul {
+	display: flex;
+	gap: 5px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	
+}
+.post-items li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+}
+.post-items ul li {
+	width: 30px;
 }

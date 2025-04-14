@@ -1,0 +1,88 @@
+.user-info {
+    width: calc(100%/3);
+	display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	line-height: 20px;
+	padding: 0rem 1rem;
+	/* border: 2pt solid rgb(243, 51, 51); */
+    text-decoration: none;
+}
+
+.prof-buttons {
+    width: calc(100%/3);
+    display: flex;
+    padding: 1rem;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.prof-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 1rem);
+    /* height: 10%; */
+    background: deepskyblue;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+}
+.prof-button:hover {
+    background: dodgerblue;
+}
+.friends { 
+    width: calc(100%/3);
+    display: flex;
+    gap: 25px;
+    padding: 0rem 1rem;
+    overflow: hidden;
+
+}
+.friend-box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    cursor: pointer;
+}
+.fri-img {
+    width: 70px;
+    height: 70px;
+    border: 1pt solid black;
+    border-radius: 50%;
+}
+
+.fri-img:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.main-panel {
+    width: 100%/3;
+    height: 40px;
+    border: 2pt solid black;
+}
+
+.footer {
+    width: calc(100%/3 - 1.8rem);
+    height: 50px;
+    border: 1pt solid black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    background: #1359bb;
+}
+.footer li {
+    width: 100%;
+    height: 100%;
+}
+.footer li svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
